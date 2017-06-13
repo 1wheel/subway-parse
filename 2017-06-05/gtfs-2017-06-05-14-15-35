@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9/> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://datamine.mta.info/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Page not found | MTA</title> 
+  <link type="text/css" rel="stylesheet" href="http://datamine.mta.info/sites/all/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://datamine.mta.info/sites/all/files/css/css__eI-QBrkS7Fhq4ivYFedEXSif0P4eMiebr38a5RQ4bc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://datamine.mta.info/sites/all/files/css/css_M_MFosgd17z4Uopwf1NJu-CY2MN5RPyNtMobvrpleV0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://datamine.mta.info/sites/all/files/css/css_8myhrsfa-cTkPWW_TRh_AYx2G72aL21URIRqzgssVbo.css" media="all" />
+  <script type="text/javascript" src="http://datamine.mta.info/sites/all/files/js/js_Xjzh1hVfcgVAixhmmB6Go8TUMPOiprA-2vkC-oWXARQ.js"></script>
+<script type="text/javascript" src="http://datamine.mta.info/sites/all/files/js/js_bYTn_hnm6FTYFC4MX4jXq1dgjDpTuSA-Xc_bnf6q1tM.js"></script>
+<script type="text/javascript" src="http://datamine.mta.info/sites/all/files/js/js_gKqQMEVMgeQjGClQWuyfgHaWcjlQLLazppG9WMNWTzg.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-37680079-1", {"cookieDomain":"auto"});ga("set", "page", "/404.html?page=" + document.location.pathname + document.location.search + "&from=" + document.referrer);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(function(){
+jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
+animation: {opacity:'show'},
+speed: 'fast',
+autoArrows: false,
+dropShadows: true});
+});
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://datamine.mta.info/sites/all/files/js/js_Tue3Uvub_P_YOin7KVW1e1Z1VntTQpJQiJF5B4Ec9tI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"mta","theme_token":"13YGl3zLz6NUL_8DiFLak73aL2SQGrcmSZUGhOq7M2E","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/google_cse\/google_cse.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/jquery.bgiframe.min.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"1":1,"sites\/all\/themes\/mta\/\/js\/jquery.maskedinput-1.3.min.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_cse\/google_cse.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-vertical.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-navbar.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"sites\/all\/themes\/mta\/base.css":1,"sites\/all\/themes\/mta\/grid.css":1,"sites\/all\/themes\/mta\/homepage.css":1,"sites\/all\/themes\/mta\/formalize.css":1,"sites\/all\/themes\/mta\/topbar.css":1}},"googleCSE":{"cx":"001206406127754148335:wfgv6ik0gky","language":"","resultsWidth":600,"domain":"www.google.com"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/files\/k38dkwh992dk\/gtfs":true}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-files page-files-k38dkwh992dk page-files-k38dkwh992dk-gtfs" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <!--[if lt IE 9]>
+			<style>.roundCorners, #block-google-appliance-ga-related-searches {border: 1px solid #b4b4b4;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;background: #fff;behavior: url(/sites/all/themes/mta/border-radius.htc);}</style>
+		<![endif]-->
+
+<div id="page">
+		<div id="mainbox">
+
+			<div id="topbar">
+				<div id="branding">
+					<a href="http://www.mta.info"><img src="/sites/all/themes/mta/images/mta_info.gif"></a>
+				</div>
+				<div id="middle-header">
+								</div>
+				<div id="search">
+
+			  <div class="region region-header-right">
+    <div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form class="google-cse" action="/files/k38dkwh992dk/gtfs" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-9n-iIL3onRvbrzutuj1JrSy5i6MZU7tzxzQvk5W2i6E" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+  </div>
+
+				</div>
+			 </div>
+			<div id="navbar">  <div class="region region-navbar">
+    <div id="block-superfish-1" class="block block-superfish">
+
+    
+  <div class="content">
+    <ul id="superfish-1" class="sf-menu main-menu sf-horizontal sf-style-default sf-total-items-8 sf-parent-items-2 sf-single-items-6"><li id="menu-218-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-6 sf-parent-children-0 sf-single-children-6 menuparent"><a href="http://www.mta.info/" title="" class="sf-depth-1  menuparent">Home</a><ul><li id="menu-592-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="http://www.mta.info/" title="" class="sf-depth-2 ">MTA Home</a></li><li id="menu-593-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="http://www.mta.info/nyct" title="" class="sf-depth-2 ">NYC Subways and Buses</a></li><li id="menu-594-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://www.mta.info/lirr" title="" class="sf-depth-2 ">Long Island Rail Road</a></li><li id="menu-595-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="http://www.mta.info/mnr" title="" class="sf-depth-2 ">Metro-North Railroad</a></li><li id="menu-596-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="http://www.mta.info/bandt" title="" class="sf-depth-2 ">Bridges and Tunnels</a></li><li id="menu-597-1" class="last even sf-item-6 sf-depth-2 sf-no-children"><a href="http://web.mta.info/capital" title="" class="sf-depth-2 ">MTA Capital Program</a></li></ul></li><li id="menu-598-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="http://web.mta.info/schedules" title="" class="sf-depth-1 ">Schedules</a></li><li id="menu-599-1" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="http://web.mta.info/fares" title="" class="sf-depth-1 ">Fares &amp; Tolls</a></li><li id="menu-600-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="http://web.mta.info/maps" title="" class="sf-depth-1 ">Maps</a></li><li id="menu-601-1" class="middle odd sf-item-5 sf-depth-1 sf-no-children"><a href="http://web.mta.info/service" title="" class="sf-depth-1 ">Planned Service Changes</a></li><li id="menu-602-1" class="middle even sf-item-6 sf-depth-1 sf-no-children"><a href="http://web.mta.info/about" title="" class="sf-depth-1 ">MTA Info</a></li><li id="menu-603-1" class="middle odd sf-item-7 sf-depth-1 sf-no-children"><a href="http://web.mta.info/business" title="" class="sf-depth-1 ">Doing Business With Us</a></li><li id="menu-604-1" class="last even sf-item-8 sf-depth-1 sf-total-children-10 sf-parent-children-0 sf-single-children-10 menuparent"><a href="http://web.mta.info/accountability/" title="" class="sf-depth-1  menuparent">Transparency</a><ul><li id="menu-605-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="http://web.mta.info/accountability" title="" class="sf-depth-2 ">Main Page</a></li><li id="menu-606-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="http://web.mta.info/mta/boardmaterials.html" title="" class="sf-depth-2 ">Board Materials</a></li><li id="menu-607-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://web.mta.info/mta/budget/" title="" class="sf-depth-2 ">Budget Info</a></li><li id="menu-608-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="http://web.mta.info/capital" title="" class="sf-depth-2 ">Capital Program Info</a></li><li id="menu-609-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="http://web.mta.info/capitaldashboard/CPDHome.html" title="" class="sf-depth-2 ">Capital Program Dashboard</a></li><li id="menu-4481-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="http://web.mta.info/mta/investor/" title="" class="sf-depth-2 ">Investor Information</a></li><li id="menu-610-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children"><a href="http://web.mta.info/mta/leadership/" title="" class="sf-depth-2 ">MTA Leadership</a></li><li id="menu-611-1" class="middle even sf-item-8 sf-depth-2 sf-no-children"><a href="http://web.mta.info/persdashboard/performance14.html" title="" class="sf-depth-2 ">Performance Indicators</a></li><li id="menu-612-1" class="middle odd sf-item-9 sf-depth-2 sf-no-children"><a href="http://www.mta.info/mta-news" title="" class="sf-depth-2 ">Press Releases and News</a></li><li id="menu-613-1" class="last even sf-item-10 sf-depth-2 sf-no-children"><a href="http://web.mta.info/mta/news/hearings" title="" class="sf-depth-2 ">Public Hearings</a></li></ul></li></ul>  </div>
+</div>
+<div id="block-block-5" class="block block-block">
+
+    
+  <div class="content">
+    <p style="text-align:right;"><span class="text">Already registered?</span><a href="/user">Log In</a></p>
+  </div>
+</div>
+  </div>
+</div>
+			<div id="breadcrumb"> <!-- we leave the div and keep spacing -->
+											</div>
+      <div class="messages-wrapper"></div>
+			<div id="contentbox" class="roundCorners clearfix">
+							<div class="container">
+								<div class="span-90">
+			 				 <div id="pageTitleArea">
+																		<h1 class="title" id="page-title">Page not found</h1>																		
+							</div>
+									
+
+
+								<div id="main-message" class="span-43 full-main">
+
+									<a id="main-content"></a>
+
+
+									<div class="tabs"></div>																		  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    The requested page "/files/k38dkwh992dk/gtfs" could not be found.  </div>
+</div>
+  </div>
+								</div><!-- close span-43 -->
+
+
+									
+										
+									
+
+
+								<!-- close span-21 last -->
+						</div><!-- close container for grid -->
+			</div>
+
+	</div>
+		  <div class="region region-footer">
+    <div id="block-block-6" class="block block-block">
+
+    
+  <div class="content">
+    <div id="translate">
+<div id="google_translate_element">
+<div id="temp_GT">
+<ul class="social-links" style="margin: 0;"><li class="social-google"><a href="#translate">Google Translate</a></li>
+</ul></div>
+</div>
+<!-- close google_translate_element --></div>
+<!-- close translate --><script>
+<!--//--><![CDATA[// ><!--
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+  pageLanguage: 'en',
+  layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+
+jQuery("#temp_GT").click(function() {
+  var fileref = document.createElement('script');
+    fileref.setAttribute("type", "text/javascript");
+    fileref.setAttribute("src", "http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
+
+    document.getElementsByTagName("head")[0].appendChild(fileref);
+  jQuery("#temp_GT").hide();
+});
+
+//--><!]]>
+</script>  </div>
+</div>
+  </div>
+</div>
+  </body>
+</html>
