@@ -1,0 +1,63 @@
+[
+  {
+    "date": "05-16",
+    "parsed-data": 1331
+  },
+  {
+    "date": "05-17",
+    "parsed-data": 1336
+  },
+  {
+    "date": "05-18",
+    "parsed-data": 1286
+  },
+  {
+    "date": "05-19",
+    "parsed-data": 1423
+  },
+  {
+    "date": "05-22",
+    "parsed-data": 1364,
+    "transit-app": 1177
+  },
+  {
+    "date": "05-23",
+    "parsed-data": 1356,
+    "transit-app": 866
+  },
+  {
+    "date": "05-24",
+    "parsed-data": 1347
+  },
+  {
+    "date": "05-25",
+    "parsed-data": 1321,
+    "transit-app": 1160
+  },
+  {
+    "date": "05-26",
+    "parsed-data": 1339,
+    "transit-app": 1167
+  },
+  {
+    "date": "06-01",
+    "parsed-data": 931
+  },
+  {
+    "date": "06-02",
+    "parsed-data": 1317,
+    "transit-app": 1183
+  },
+  {
+    "date": "06-09",
+    "parsed-data": 1309
+  },
+  {
+    "date": "06-12",
+    "parsed-data": 1324
+  },
+  {
+    "date": "06-13",
+    "parsed-data": 1338
+  }
+]
