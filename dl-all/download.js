@@ -14,30 +14,22 @@ function downloadDate(date, cb) {
   var cmd = [
     'mkdir -p ' + path,
     'cd ' + path,
-    '/usr/local/bin/wget https://datamine-' + date + '.s3.amazonaws.com/gtfs.tgz',
-    'tar xzf gtfs.tgz'
+    'curl -s https://datamine-' + date + '.s3.amazonaws.com/gtfs.tgz | tar xz',
   ].join(' && ')
   console.log(cmd)
 
 
   exec(cmd, (error, stdout, stderr) => {
-    if (error) return console.error(`exec error: ${error}`)
-    // console.log(`stdout: ${stdout}`);
-    // console.log(`stderr: ${stderr}`);
-  })
-
-  return;
-
-  const process = spawn(cmd)
-  process.stdout.on('data', data => console.log(`stdout: ${data}`))
-  process.stderr.on('data', data => console.log(`stderr: ${data}`))
-  process.on('error', data => console.log(`error: ${data}`))
-  process.on('close', code => {
-    console.log(`child process exited with code ${code}`)
-    // cb()
+    if (error)  console.error(`exec error: ${error}`)
+    if (stdout) console.log(`stdout: ${stdout}`);
+    if (stderr) console.log(`stderr: ${stderr}`);
+    cb()
   })
 }
 
-
 q.awaitAll(err => console.log(err))
-//wget https://datamine-2014-09-17.s3.amazonaws.com/gtfs.tgz && tar xvzf gtfs.tgz
+
+// data is missing! 
+// https://groups.google.com/forum/#!searchin/mtadeveloperresources/Historical%7Csort:relevance
+// http://data.mytransit.nyc/subway_time/
+// https://datamine-history.s3.amazonaws.com/index.html
