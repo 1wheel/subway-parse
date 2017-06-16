@@ -1,10 +1,13 @@
 var { _, cheerio, d3, fs, glob, io, queue, request } = require('scrape-stl');
 
-var listofdays = ["05-16", "05-17", "05-18", "05-19", "05-22", "05-23", "05-24", "05-25", "05-26", "06-01", "06-02",, "06-09", "06-12", "06-13"];
+// var listofdays = ["05-16", "05-17", "05-18", "05-19", "05-22", "05-23", "05-24", "05-25", "05-26", "06-01", "06-02",, "06-09", "06-12", "06-13"];
+
+var listofdays = ["05-22", "05-23", "05-25", "05-26"];
+
 var stats = [];
 _.each(listofdays, function(date){
 
-  var file = fs.readFileSync("stop-times-2017-" + date + ".json");
+  var file = fs.readFileSync("new-dl-2017-" + date + ".json");
   file = JSON.parse(file);
   var trips = [];
   _.each(Object.keys(file), function(f){
@@ -35,4 +38,4 @@ _.each(listofdays, function(date){
 
 
 });
-fs.writeFileSync("stats.json", JSON.stringify(stats, null, 2));
+fs.writeFileSync("new-dl-summary.json", JSON.stringify(stats, null, 2));

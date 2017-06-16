@@ -18,26 +18,34 @@
   {
     "date": "05-22",
     "parsed-data": 1364,
-    "transit-app": 1177
+    "transit-app": 1177,
+    "downloaded-data": 1363,
+    "transit-app-new": 1286
   },
   {
     "date": "05-23",
     "parsed-data": 1356,
-    "transit-app": 866
+    "transit-app": 866,
+    "downloaded-data": 1355,
+    "transit-app-new": 949
   },
   {
     "date": "05-24",
-    "parsed-data": 1347
+    "parsed-data": 1347,
+    "transit-app-new": 1300
   },
   {
     "date": "05-25",
     "parsed-data": 1321,
-    "transit-app": 1160
+    "transit-app": 1160,
+    "downloaded-data": 1321
   },
   {
     "date": "05-26",
     "parsed-data": 1339,
-    "transit-app": 1167
+    "transit-app": 1167,
+    "downloaded-data": 1337,
+    "transit-app-new": 1284
   },
   {
     "date": "06-01",
@@ -46,7 +54,8 @@
   {
     "date": "06-02",
     "parsed-data": 1317,
-    "transit-app": 1183
+    "transit-app": 1183,
+    "transit-app-new": 1196
   },
   {
     "date": "06-09",
