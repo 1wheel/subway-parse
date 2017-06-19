@@ -10,9 +10,9 @@ var stats = {};
     var date = path.split("/").slice("-1")[0];
 
     glob.sync(path + '/*').forEach(p => {
-      console.log(p)
       var slug = p.split('/').slice(-1)[0];
 
+      console.log(slug)
       try {
         var buffer = fs.readFileSync(p);
         var feed = GtfsRealtimeBindings.FeedMessage.decode(buffer);
@@ -29,7 +29,7 @@ var stats = {};
           entity.trip_update.stop_time_update.forEach(d => {
             var stop = d.stop_id;
             var time = d.departure || d.arrival ? (d.departure || d.arrival).time.low : 0;
-            tripStop2time[trip + ' ' + stop] = time;
+            tripStop2time[trip + ' ' + stop] = feed.header.timestamp.low + " " + time;
           });
         }
       });
