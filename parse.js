@@ -28,7 +28,7 @@ var stats = {};
         if (route == "4" || route == "5" || route == "6") {
           entity.trip_update.stop_time_update.forEach(d => {
             var stop = d.stop_id;
-            var time = d.departure || d.arrival ? (d.departure || d.arrival).time.low : 0;
+            var time = d.arrival || d.departure ? (d.arrival || d.departure).time.low : 0;
             tripStop2time[trip + ' ' + stop] = feed.header.timestamp.low + " " + time;
           });
         }
