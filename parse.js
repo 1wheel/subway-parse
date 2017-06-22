@@ -4,11 +4,11 @@ var { _, cheerio, d3, fs, glob, io, queue, request } = require('scrape-stl');
 var stats = {};
 // _.each(listofdays, function(date){
 
-glob.sync(__dirname + '/dl-all/raw-days/*').forEach(path => {
-  parseDate(path, path.split("/").slice("-1")[0])
-})
+// glob.sync(__dirname + '/dl-all/raw-days/*').forEach(path => {
+//   parseDate(path, path.split("/").slice("-1")[0])
+// })
 
-parseDate(__dirname + '/2017-06-05', '2017-06-05')
+parseDate(__dirname + '/dl-all/raw-days/2017-06-15', '2017-06-15')
 
 
 function parseDate(path, date){
@@ -36,6 +36,10 @@ function parseDate(path, date){
       var trip = rawTripId
       var route = trip.split("_")[1].substring(0,1);
       if (route == "4" || route == "5" || route == "6") {
+
+        console.log(trip)
+        trip = trip.split("..")[0] + trip.split("..")[1].slice(0,1) 
+
         entity.trip_update.stop_time_update.forEach(d => {
           var stop = d.stop_id;
           var time = d.arrival || d.departure ? (d.arrival || d.departure).time.low : 0;
