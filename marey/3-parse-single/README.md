@@ -6,7 +6,7 @@ Concerns:
 
 The trips on very bottom clearly don't happen. They can be filtered out by comparing system time to arrival time of the last published update and removing trips with a difference of greater than two minutes. 
 
-In the last few ticks of updates arrival time moves backwards in time, jumping back 5 minutes. It isn't clear which trips are actually completed. Because of the time jump, the difference arrival and system time for stop 635S is less than a minute on the last update. It wouldn't get filtered out with a simple comparison between arrival and system times, despite pretty clearly not actually occurring. 
+In the last few ticks of updates arrival time moves backwards in time, jumping back 5 minutes. It isn't clear which trips are actually completed. Because of the time jump, the difference arrival and system time for stop 635 and 636 is less than a minute on the last update. It wouldn't get filtered out with a simple comparison between arrival and system times, despite pretty clearly not actually occurring. With the current filtering, it looks like the train runs express to 635, makes one more stop at 636 and then stops.  
 
 Could do some kind of filter ignore large jumps, but that will make parsing the data more complicated. Also there is a large jump at the start when trains actually start running - probably shouldn't throw that out? 
 
@@ -16,5 +16,18 @@ The very first stop might also have to be handled differently - looks like 601S'
 
 
 
+015950_6 is a normal looking trip. The last stop is kind of weird but ends up looking okay in the end
 
-```
+043400_6..S02R has a huge delay at the start
+
+
+
+TODO
+
+check what happens when using no strict parsing for two trips that look identical:
+
+032200_6..S
+032200_6..S01X004
+
+
+Look at trips that overlap

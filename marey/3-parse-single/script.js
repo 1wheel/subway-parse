@@ -2,6 +2,7 @@ console.clear()
 
 
 var dataPath = '032200_6.json' // train that moves back and forth on marey 
+var dataPath = '015950_6.json' //normal looking train 
 d3.loadData(dataPath, function(err, res){
   ticks = res[0]
 

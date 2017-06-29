@@ -2,14 +2,17 @@ var GtfsRealtimeBindings = require('gtfs-realtime-bindings')
 var { _, cheerio, d3, fs, glob, io, queue, request } = require('scrape-stl')
 
 
-var trip_id = '032200_6..S01X004'
-var trip_slug = '032200_6'
+var trip_id = "015950_6..S01X004" //'032200_6..S01X004'
+var trip_slug = '015950_6'//'032200_6'
+
 var dataPath = __dirname + '/../../' + '2017-06-05'
 
 
 var tripStop2time = {}
 glob.sync(dataPath + '/*').forEach(path => {
   var slug = path.split('/').slice(-1)[0]
+  var outDir = __dirname + '/raw-single/' + trip_slug + '/'
+  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir)
 
   try {
     // if (slug == 'gtfs-2017-06-05-00-06-05') return
@@ -31,9 +34,15 @@ glob.sync(dataPath + '/*').forEach(path => {
     })
     // console.log(tripStop2time)
     entity.timestamp = feed.header.timestamp.low
-    io.writeDataSync(__dirname + '/raw-single/' + trip_slug + '/' + slug + '.json', entity)
+    io.writeDataSync(outDir + slug + '.json', entity)
   })
 })
+
+var allTicks = glob.sync(__dirname + '/raw-single/' + trip_slug + '/*').map(io.readDataSync)
+io.writeDataSync(__dirname + '/' + trip_slug + '.json', allTicks)
+
+
+
 
 //filter rougte id to 456
 //GS is the shuttle

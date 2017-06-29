@@ -21,6 +21,12 @@ all look like they could be the same trip. `046200_6..S` and `052000_6..S06R` ov
 
 is probably just one trip -- maybe the entire slug isn't necessary?
 
+```
+032200_6..S
+032200_6..S01X004
+```
+
+also look the same
 
 Dropping down to +2 min abs removes almost all double backs - which still exist? 
 
