@@ -8,7 +8,8 @@ var stats = {};
 //   parseDate(path, path.split("/").slice("-1")[0])
 // })
 
-parseDate(__dirname + '/dl-all/raw-days/2017-06-15', '2017-06-15')
+// parseDate(__dirname + '/dl-all/raw-days/2017-06-15', '2017-06-15')
+parseDate(__dirname + '/2017-06-05', '2017-06-05')
 
 
 function parseDate(path, date){
@@ -30,15 +31,13 @@ function parseDate(path, date){
 
       var rawTripId = entity.trip_update.trip.trip_id
       var tripComponents = rawTripId.split('.').filter(d => d)
-      // console.log('raw', rawTripId)
       var trip = tripComponents[0] + '_' + (tripComponents[1] ? tripComponents[1].substring(0,1) : '');
-      // console.log('out', trip)
       var trip = rawTripId
       var route = trip.split("_")[1].substring(0,1);
       if (route == "4" || route == "5" || route == "6") {
 
-        console.log(trip)
         trip = trip.split("..")[0] + trip.split("..")[1].slice(0,1) 
+        console.log(trip)
 
         entity.trip_update.stop_time_update.forEach(d => {
           var stop = d.stop_id;
