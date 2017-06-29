@@ -173,7 +173,7 @@ function dayFilter(d){
 
 function stopFilter(d){
   return d.route == 6 && 
-    Math.abs(d.systemTime - d.arrivalTime) < 1000*60*10 &&
+    Math.abs(d.systemTime - d.arrivalTime) < 1000*60*2 &&
     d.direction == 'S'
   return d.route == 4 || d.route == 5 || d.route == 6 && is6stop[d.station]
   return (''+d.station)[0] == 6
@@ -222,7 +222,7 @@ d3.loadData('2017-06-05_full-id.tsv', function(err, res){
 
   c.y.domain(d3.extent(data456, d => d.arrivalTime).reverse())
   // c.x.domain([1497501570000, 1497591180000])
-  c.x.domain([stations.length, 0])
+  c.x.domain([0, stations.length])
 
   station2x = {}
   stations.forEach((d, i) => station2x[d] = c.x(i))
@@ -233,7 +233,7 @@ d3.loadData('2017-06-05_full-id.tsv', function(err, res){
   c.drawAxis()
 
   
-  var rScale = d3.scaleSqrt().domain([0, 1000*60*10]).range([1, 10]).clamp(true)
+  var rScale = d3.scaleSqrt().domain([0, 1000*60*10]).range([1, 12]).clamp(true)
 
   var line = d3.line()
     .y(d => c.y(d.arrivalTime))
@@ -250,7 +250,7 @@ d3.loadData('2017-06-05_full-id.tsv', function(err, res){
     .filter((d, i) => i < 500)
     .appendMany(d => d.filter(d => d.absDif > 1000*60*-1), 'circle')
     .translate(d => [station2x[d.station], c.y(d.arrivalTime)])
-    .at({r: d => rScale(d.absDif), fill: d => d.dif < 0 ? 'steelblue' : 'orange', opacity: .8})
+    .at({r: d => rScale(d.absDif), fill: d => d.dif < 0 ? 'steelblue' : 'orange', fillOpacity: .5, stroke: '#000'})
     .call(d3.attachTooltip)
 })
 
