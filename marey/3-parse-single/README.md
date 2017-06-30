@@ -16,11 +16,11 @@ The very first stop might also have to be handled differently - looks like 601S'
 
 
 
-015950_6 is a normal looking trip. The last stop is kind of weird but ends up looking okay in the end
+015950_6 is a normal looking trip. The last stop is kind of weird but ends up looking okay in the end. 
 
-043400_6..S02R has a huge delay at the start
+043400_6..S02R has a huge delay at the start then runs express. It doesn't look like it was ever scheduled to run locally for those stops.
 
-
+084550_6 it looks like when trains are delayed, they travel time doesn't update until the train starts running again. Could exclude ticks where the first arrival time is past system time
 
 TODO
 
@@ -31,3 +31,6 @@ check what happens when using no strict parsing for two trips that look identica
 
 
 Look at trips that overlap
+
+
+Check one that runs express

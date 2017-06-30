@@ -2,8 +2,22 @@ var GtfsRealtimeBindings = require('gtfs-realtime-bindings')
 var { _, cheerio, d3, fs, glob, io, queue, request } = require('scrape-stl')
 
 
+var trip_id = '032200_6..S01X004'
+var trip_slug = '032200_6'
+
 var trip_id = "015950_6..S01X004" //'032200_6..S01X004'
 var trip_slug = '015950_6'//'032200_6'
+
+var trip_id = "043400_6..S02R" 
+var trip_slug = '043400_6'
+
+var trip_id = "058550_6..S07X001" 
+var trip_slug = '058550_6'
+
+var trip_id = "084550_6..S03X001" 
+var trip_slug = '084550_6'
+
+
 
 var dataPath = __dirname + '/../../' + '2017-06-05'
 

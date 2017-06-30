@@ -242,10 +242,25 @@ d3.loadData('2017-06-05_full-id.tsv', function(err, res){
   
   var byTrainSel = c.svg.appendMany(byTrain, 'g')
   
+  var highlights = [
+    '032200_6..S01X004',  // turns back on itself
+    '032200_6..S',        // looks like it switches to this
+
+    '085300_6..S',        // looks like the trip was split
+    '085300_6..S03X001',  // looks like the trip was split
+
+    '043400_6..S02R',     // huge delay at the start, then runs express
+    '058550_6..S07X001',  // normal, then runs express 
+    '084550_6..S03X001',  // skips a single stop?
+    
+    '015950_6',           // normal looking trip
+  ]
+
   byTrainSel.append('path')
     .at({d: line, stroke: '#555', fill: 'none'})
     .call(d3.attachTooltip)
     .on('click', function(d){ curdata = d})
+    .classed('highlight', d => highlights.includes(d.key))
   byTrainSel
     .filter((d, i) => i < 500)
     .appendMany(d => d.filter(d => d.absDif > 1000*60*-1), 'circle')

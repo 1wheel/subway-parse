@@ -2,7 +2,11 @@ console.clear()
 
 
 var dataPath = '032200_6.json' // train that moves back and forth on marey 
-var dataPath = '015950_6.json' //normal looking train 
+var dataPath = '015950_6.json' // normal looking train 
+var dataPath = '043400_6.json' // delays 
+var dataPath = '058550_6.json' // normal, then runs express 
+var dataPath = '084550_6.json' // skips a single stop?
+
 d3.loadData(dataPath, function(err, res){
   ticks = res[0]
 
@@ -33,7 +37,7 @@ d3.loadData(dataPath, function(err, res){
 
   svg.append('path')
     .at({d: 'M 0 0 L 600 600',})
-    .st({stroke: '#0ff', strokeWidth: 3})
+    .st({stroke: '#0ff', strokeWidth: 3, pointerEvents: 'none'})
 
   byStop = d3.nestBy(updates, d => d.stop_id)
 
