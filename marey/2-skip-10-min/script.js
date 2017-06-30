@@ -249,6 +249,9 @@ d3.loadData('2017-06-05_full-id.tsv', function(err, res){
     '085300_6..S',        // looks like the trip was split
     '085300_6..S03X001',  // looks like the trip was split
 
+    '065100_6..S',        // looks like the trip was split
+    '065100_6..S02X001',  // looks like the trip was split
+
     '043400_6..S02R',     // huge delay at the start, then runs express
     '058550_6..S07X001',  // normal, then runs express 
     '084550_6..S03X001',  // skips a single stop?

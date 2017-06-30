@@ -2,6 +2,7 @@ console.clear()
 
 
 var dataPath = '032200_6.json' // train that moves back and forth on marey 
+var dataPath = '032200_6-s.json' // train that moves back and forth on marey 
 var dataPath = '015950_6.json' // normal looking train 
 var dataPath = '043400_6.json' // delays 
 var dataPath = '058550_6.json' // normal, then runs express 

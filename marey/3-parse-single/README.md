@@ -16,11 +16,14 @@ The very first stop might also have to be handled differently - looks like 601S'
 
 
 
-015950_6 is a normal looking trip. The last stop is kind of weird but ends up looking okay in the end. 
+`015950_6 `is a normal looking trip. The last stop is kind of weird but ends up looking okay in the end. 
 
-043400_6..S02R has a huge delay at the start then runs express. It doesn't look like it was ever scheduled to run locally for those stops.
+`043400_6..S02R` has a huge delay at the start then runs express. It doesn't look like it was ever scheduled to run locally for those stops.
 
-084550_6 it looks like when trains are delayed, they travel time doesn't update until the train starts running again. Could exclude ticks where the first arrival time is past system time
+`084550_6` it looks like when trains are delayed, they travel time doesn't update until the train starts running again. It isn't clear if the train is sitting in the platform then or stuck in the tunnel. Could exclude ticks where the first arrival time is past system time... I think setting the first train's arrival time to the system time and removing subsequently schedules stops from the feed would be a good fix -- currently the first stop after a delay is filtered out since system time passes arrival time on its last update.
+
+
+
 
 TODO
 
