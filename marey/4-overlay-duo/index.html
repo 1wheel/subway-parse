@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+body{
+	margin: 0px;
+	font-family: Consolas, Andale Mono, Menlo, Monaco, monospace;
+}
+
+text{
+	fill: #000;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.domain{
+	display: none;
+}
+
+path{
+	stroke-width: 1;
+}
+
+
+path:hover{
+	stroke-width: 5 !important;
+	stroke: pink !important;
+}
+
+svg{
+	overflow: visible;
+}
+
+.tooltip {
+  top: -1000px;
+  position: fixed;
+  padding: 10px;
+  background: rgba(255, 255, 255, .90);
+  border: 1px solid lightgray;
+  pointer-events: none;
+}
+.tooltip-hidden{
+  opacity: 0;
+  transition: all .3s;
+  transition-delay: .1s;
+}
+
+@media (max-width: 590px){
+  div.tooltip{
+    bottom: -1px;
+    width: calc(100%);
+    left: -1px !important;
+    right: -1px !important;
+    top: auto !important;
+    width: auto !important;
+  }
+}
+
+</style>
+
+<body>
+
+<div id='graph'></div>
+<div id='graph2'></div>
+
+</body>
+
+<script src="d3_.js"></script>
+
+
+<script src='script.js'></script>

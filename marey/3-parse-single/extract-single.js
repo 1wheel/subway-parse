@@ -5,8 +5,8 @@ var { _, cheerio, d3, fs, glob, io, queue, request } = require('scrape-stl')
 var trip_id = '032200_6..S01X004'
 var trip_slug = '032200_6'
 
-var trip_id = '032200_6..S'
-var trip_slug = '032200_6-s'
+// var trip_id = '032200_6..S'
+// var trip_slug = '032200_6-s'
 
 // var trip_id = "015950_6..S01X004" 
 // var trip_slug = '015950_6'
@@ -19,6 +19,9 @@ var trip_slug = '032200_6-s'
 
 // var trip_id = "084550_6..S03X001" 
 // var trip_slug = '084550_6'
+
+
+var trip
 
 
 
