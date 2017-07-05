@@ -1,12 +1,13 @@
 console.clear()
+d3.select('html').selectAppend('div.tooltip')
 
 
 var dataPath = '032200_6.json' // train that moves back and forth on marey 
-var dataPath = '032200_6-s.json' // train that moves back and forth on marey 
-var dataPath = '015950_6.json' // normal looking train 
-var dataPath = '043400_6.json' // delays 
-var dataPath = '058550_6.json' // normal, then runs express 
-var dataPath = '084550_6.json' // skips a single stop?
+// var dataPath = '032200_6-s.json' // train that moves back and forth on marey 
+// var dataPath = '015950_6.json' // normal looking train 
+// var dataPath = '043400_6.json' // delays 
+// var dataPath = '058550_6.json' // normal, then runs express 
+// var dataPath = '084550_6.json' // skips a single stop?
 
 d3.loadData(dataPath, function(err, res){
   ticks = res[0]

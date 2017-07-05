@@ -4,10 +4,12 @@ d3.select('html').selectAppend('div.tooltip')
 
 var dataPathA = '../3-parse-single/032200_6.json' // train that moves back and forth on marey 
 var dataPathB = '../3-parse-single/032200_6-s.json' // train that moves back and forth on marey 
-// var dataPath = '015950_6.json' // normal looking train 
-// var dataPath = '043400_6.json' // delays 
-// var dataPath = '058550_6.json' // normal, then runs express 
-// var dataPath = '084550_6.json' // skips a single stop?
+
+// var dataPathA = '../3-parse-single/085300_6.json' // looks like trip was split 
+// var dataPathB = '../3-parse-single/085300_6-s.json' // looks like trip was split 
+
+// var dataPathA = '../3-parse-single/065100_6.json' // looks like trip was split 
+// var dataPathB = '../3-parse-single/065100_6-s.json' // looks like trip was split 
 
 d3.loadData(dataPathA, dataPathB, function(err, res){
   var ticksA = res[0]
