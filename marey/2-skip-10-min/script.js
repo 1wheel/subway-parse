@@ -174,7 +174,7 @@ function dayFilter(d){
 function stopFilter(d){
   return d.route == 6 && 
     Math.abs(d.systemTime - d.arrivalTime) < 1000*60*2 &&
-    d.direction == 'S'
+    d.direction == 'N'
   return d.route == 4 || d.route == 5 || d.route == 6 && is6stop[d.station]
   return (''+d.station)[0] == 6
 }
@@ -184,8 +184,8 @@ function byTrainFilter(d){
   return d[0].station < d[2].station
 }
 
-d3.loadData('2017-06-05_full-id.tsv', function(err, res){
-// d3.loadData('2017-06-15.tsv', function(err, res){
+// d3.loadData('2017-06-05_full-id.tsv', function(err, res){
+d3.loadData('2017-06-15.tsv', function(err, res){
   data = res[0]
 
   data.forEach(function(d){
@@ -198,7 +198,8 @@ d3.loadData('2017-06-05_full-id.tsv', function(err, res){
     d.day = d3.timeFormat('%d')(d.arrivalTime)
     d.tstamp = d3.timeFormat('%d %H:%M')(d.arrivalTime)
 
-    d.direction = d.trip.split('..')[1][0]
+    // d.direction = d.trip.split('..')[1][0]
+    d.direction = _.last(d.trip)
   })
 
   data456 = data
@@ -271,4 +272,3 @@ d3.loadData('2017-06-05_full-id.tsv', function(err, res){
     .at({r: d => rScale(d.absDif), fill: d => d.dif < 0 ? 'steelblue' : 'orange', fillOpacity: .5, stroke: '#000'})
     .call(d3.attachTooltip)
 })
-
