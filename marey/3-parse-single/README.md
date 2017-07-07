@@ -25,16 +25,6 @@ The very first stop might also have to be handled differently - looks like 601S'
 
 
 
-TODO
-
-check what happens when using no strict parsing for two trips that look identical:
-
-032200_6..S
-032200_6..S01X004
-
-
-065100_6..S02X001
-065100_6..S
 
 Look at trips that overlap
 
