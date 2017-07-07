@@ -42,6 +42,9 @@ d3.loadData(dataPath, function(err, res){
     .st({stroke: '#0ff', strokeWidth: 3, pointerEvents: 'none'})
 
   byStop = d3.nestBy(updates, d => d.stop_id)
+  byStop.forEach(d => {
+    d.last = _.last(d)
+  })
 
   var line = d3.line()
     .x(d => s(d.systemTime))
@@ -52,6 +55,10 @@ d3.loadData(dataPath, function(err, res){
       d: line, stroke: '#000', fill: 'none', opacity: 1
     })
     .call(d3.attachTooltip)
+
+  // svg.appendMany(byStop, 'text')
+  //   .translate(d => [d.last.systemTime, d.last.arrivalTime])
+  //   .text(d => d.key)
 
 
 })
