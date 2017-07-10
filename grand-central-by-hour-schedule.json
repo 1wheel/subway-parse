@@ -1,0 +1,682 @@
+[
+  {
+    "date": "schedule",
+    "hour_route_key": "00 _4_S",
+    "count": 2
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "02 _4_N",
+    "count": 2
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "04 _4_S",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "05 _4_N",
+    "count": 4
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "07 _4_S",
+    "count": 11
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "08 _4_N",
+    "count": 12
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "06 _4_N",
+    "count": 5
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "01 _4_S",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "03 _4_N",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "05 _4_S",
+    "count": 5
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "09 _4_N",
+    "count": 12
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "08 _4_S",
+    "count": 14
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "10 _4_S",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "12 _4_N",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "13 _4_S",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "14 _4_N",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "16 _4_S",
+    "count": 14
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "17 _4_N",
+    "count": 13
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "02 _4_S",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "04 _4_N",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "07 _4_N",
+    "count": 9
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "11 _4_S",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "14 _4_S",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "15 _4_N",
+    "count": 9
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "06 _4_S",
+    "count": 9
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "09 _4_S",
+    "count": 12
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "10 _4_N",
+    "count": 11
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "13 _4_N",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "17 _4_S",
+    "count": 13
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "03 _4_S",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "11 _4_N",
+    "count": 10
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "12 _4_S",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "15 _4_S",
+    "count": 9
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "16 _4_N",
+    "count": 9
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "19 _4_N",
+    "count": 11
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "20 _4_S",
+    "count": 9
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "21 _4_N",
+    "count": 9
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "22 _4_S",
+    "count": 6
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "24 _4_N",
+    "count": 4
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "18 _4_N",
+    "count": 12
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "19 _4_S",
+    "count": 10
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "23 _4_S",
+    "count": 5
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "18 _4_S",
+    "count": 9
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "21 _4_S",
+    "count": 6
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "20 _4_N",
+    "count": 9
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "22 _4_N",
+    "count": 6
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "24 _4_S",
+    "count": 2
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "26 _4_N",
+    "count": 1
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "23 _4_N",
+    "count": 6
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "25 _4_N",
+    "count": 4
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "08 _5_S",
+    "count": 13
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "09 _5_N",
+    "count": 12
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "07 _5_S",
+    "count": 11
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "08 _5_N",
+    "count": 11
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "10 _5_S",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "11 _5_N",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "13 _5_S",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "14 _5_N",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "16 _5_S",
+    "count": 12
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "17 _5_N",
+    "count": 14
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "19 _5_S",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "20 _5_N",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "22 _5_S",
+    "count": 4
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "23 _5_N",
+    "count": 2
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "15 _5_N",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "15 _5_S",
+    "count": 12
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "16 _5_N",
+    "count": 10
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "06 _5_S",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "09 _5_S",
+    "count": 10
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "05 _5_S",
+    "count": 2
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "07 _5_N",
+    "count": 6
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "10 _5_N",
+    "count": 10
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "12 _5_S",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "13 _5_N",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "18 _5_S",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "19 _5_N",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "21 _5_S",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "21 _5_N",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "12 _5_N",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "18 _5_N",
+    "count": 10
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "22 _5_N",
+    "count": 6
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "14 _5_S",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "17 _5_S",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "06 _5_N",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "11 _5_S",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "20 _5_S",
+    "count": 5
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "02 _6_S",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "03 _6_N",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "05 _6_S",
+    "count": 6
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "05 _6_N",
+    "count": 4
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "07 _6_S",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "07 _6_N",
+    "count": 13
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "09 _6_S",
+    "count": 17
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "09 _6_N",
+    "count": 22
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "11 _6_S",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "11 _6_N",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "13 _6_S",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "14 _6_N",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "10 _6_N",
+    "count": 16
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "12 _6_N",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "14 _6_S",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "16 _6_S",
+    "count": 19
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "17 _6_N",
+    "count": 20
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "18 _6_S",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "19 _6_N",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "20 _6_S",
+    "count": 12
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "21 _6_N",
+    "count": 12
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "23 _6_S",
+    "count": 6
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "23 _6_N",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "02 _6_N",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "04 _6_S",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "16 _6_N",
+    "count": 16
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "18 _6_N",
+    "count": 18
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "22 _6_S",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "01 _6_S",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "06 _6_S",
+    "count": 9
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "08 _6_S",
+    "count": 23
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "15 _6_S",
+    "count": 14
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "17 _6_S",
+    "count": 21
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "20 _6_N",
+    "count": 13
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "04 _6_N",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "06 _6_N",
+    "count": 7
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "10 _6_S",
+    "count": 16
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "13 _6_N",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "19 _6_S",
+    "count": 14
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "01 _6_N",
+    "count": 2
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "03 _6_S",
+    "count": 3
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "08 _6_N",
+    "count": 17
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "12 _6_S",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "15 _6_N",
+    "count": 15
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "00 _6_S",
+    "count": 1
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "22 _6_N",
+    "count": 8
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "24 _6_S",
+    "count": 4
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "25 _6_N",
+    "count": 2
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "21 _6_S",
+    "count": 10
+  },
+  {
+    "date": "schedule",
+    "hour_route_key": "24 _6_N",
+    "count": 6
+  }
+]
