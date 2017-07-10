@@ -2,11 +2,13 @@ var _ = require("underscore");
 var fs = require("fs");
 var glob = require("glob");
 var json2csv = require("json2csv");
+var csv = require("csvtojson");
 
 // combine();
 // process();
 // out();
-schedule();
+// schedule();
+schedule2();
 
 
 // combine files into 1
@@ -66,13 +68,41 @@ function out() {
 
 
 function schedule() {
-	var data = fs.readFileSync("google_transit/stop_times.json");
+	var data = [];
+	csv()
+		.fromFile("google_transit/stop_times.txt")
+		.on("json", (d) => {
+			if (d.trip_id.indexOf("WKD") > -1 && d.stop_id.indexOf("631") > -1) {
+				data.push(d);
+			}
+		})
+		.on("done", () => {
+			fs.writeFileSync("schedule_grand_central.json", JSON.stringify(data,null,2))
+		});
+
+}
+
+function schedule2() {
+	var data = fs.readFileSync("schedule_grand_central.json");
 	data = JSON.parse(data);
 
-	console.log(_.uniq(_.pluck(data, "stop_id")))
-	data = _.filter(data, function(d) { return d.stop_id.indexOf("631") > -1; });
+	_.each(data, function(d){
+		d.hour_route_key = d.arrival_time.split(":")[0] + " _" + d.trip_id.split("_")[2].substring(0,1) + "_" + d.trip_id.split("_")[2].split("..")[1].substring(0,1);
+	});
 
-	console.log(data)
+	data = _.groupBy(data, "hour_route_key");
+
+	var out = [];
+
+	_.each(data, function(d, key){
+		out.push({
+			date: "schedule",
+			hour_route_key: key,
+			count: d.length
+		});
+	});
+
+	fs.writeFileSync("grand-central-by-hour-schedule.json", JSON.stringify(out, null, 2));
 }
 
 // helper functions
