@@ -1,5 +1,5 @@
 var GtfsRealtimeBindings = require('gtfs-realtime-bindings');
-var { _, cheerio, d3, fs, glob, io, queue, request } = require('scrape-stl');
+var { _, cheerio, d3, jp, fs, glob, io, queue, request } = require('scrape-stl');
 
 var stats = {};
 // _.each(listofdays, function(date){
@@ -9,7 +9,7 @@ glob.sync(__dirname + '/dl-all/raw-days/*').forEach(path => {
 })
 
 // parseDate(__dirname + '/dl-all/raw-days/2017-06-15', '2017-06-15')
-// parseDate(__dirname + '/2017-06-05', '2017-06-05')
+parseDate(__dirname + '/2017-06-05', '2017-06-05')
 
 
 function parseDate(path, date){
@@ -35,7 +35,7 @@ function parseDate(path, date){
         var tripComponents = rawTripId.split('.').filter(d => d)
         var trip = tripComponents[0] + '_' + (tripComponents[1] ? tripComponents[1].substring(0,1) : '');
         var trip = rawTripId;
-        console.log(trip)
+        // console.log(trip)
         var route = trip.split("_")[1].substring(0,1);
         if (route == "4" || route == "5" || route == "6") {
 
@@ -59,9 +59,19 @@ function parseDate(path, date){
       route: d.key.split(" ")[0].split("_")[1].substring(0,1),
       trip: d.key.split(' ')[0],
       stop: d.key.split(' ')[1],
-      time: d.value
+      timestamp: d.value.split(' ')[0],
+      arrival: d.value.split(' ')[1],
+      isValid: true
     };
   });
+
+  jp.nestBy(tidy, d => d.trip).forEach(trip => {
+    jp.nestBy(trip, d => d.timestamp).forEach(timestamps => {
+      if (timestamps.length < 2) return
+      timestamps.forEach(d => d.isValid = false)
+    }) 
+  })
+
   io.writeDataSync(__dirname + '/archive-data/' + date + '.tsv', tidy);
 }
 
