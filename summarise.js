@@ -4,11 +4,11 @@ var glob = require("glob");
 var json2csv = require("json2csv");
 var csv = require("csvtojson");
 
-// combine();
+combine();
 // process();
 // out();
 // schedule();
-schedule2();
+// schedule2();
 
 
 // combine files into 1
@@ -16,6 +16,7 @@ schedule2();
 function combine() {
 	var out = [];
 	glob.sync("archive-data/*.json").forEach(p => {
+		console.log(p)
 
 		var data = fs.readFileSync(p);
 		data = JSON.parse(data);

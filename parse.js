@@ -8,11 +8,17 @@ glob.sync(__dirname + '/dl-all/raw-days/*').forEach(path => {
   parseDate(path, path.split("/").slice("-1")[0])
 })
 
+glob.sync(__dirname + '/../../old/raw-days/*').forEach(path => {
+  parseDate(path, path.split("/").slice("-1")[0])
+})
+
 // parseDate(__dirname + '/dl-all/raw-days/2017-06-15', '2017-06-15')
 parseDate(__dirname + '/2017-06-05', '2017-06-05')
 
 
 function parseDate(path, date){
+  console.log(date)
+
   var tripStop2time = {};
 
   glob.sync(path + '/*').forEach(p => {
