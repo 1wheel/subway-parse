@@ -172,7 +172,9 @@ function dayFilter(d){
 }
 
 function stopFilter(d){
-  return d.direction == 'S'
+  return d.direction == 'S' && d.route == 6 && d.isValid && 
+    Math.abs(d.systemTime - d.arrivalTime) < 1000*60*2
+
   return d.route == 6 && 
     Math.abs(d.systemTime - d.arrivalTime) < 1000*60*2 &&
     d.direction == 'S'
@@ -182,11 +184,10 @@ function stopFilter(d){
 
 function byTrainFilter(d){
   return true
-  return d[0].station < d[2].station
+  return d.length > 2 && d[0].station < d[2].station
 }
 
 d3.loadData('2017-06-05.tsv', function(err, res){
-// d3.loadData('2017-06-15.tsv', function(err, res){
   data = res[0]
 
   data.forEach(function(d){
@@ -200,6 +201,7 @@ d3.loadData('2017-06-05.tsv', function(err, res){
     d.tstamp = d3.timeFormat('%d %H:%M')(d.arrivalTime)
 
     d.direction = _.last(d.stop.split(''))
+    d.isValid = d.isValid == 'true'
   })
 
   data456 = data
@@ -245,19 +247,19 @@ d3.loadData('2017-06-05.tsv', function(err, res){
   
   var highlights = [
     '032200_6..S01X004',  // turns back on itself
-    '032200_6..S',        // looks like it switches to this
+    '032200_6S',        // looks like it switches to this
 
     '085300_6..S03X001',  // looks like the trip was split
-    '085300_6..S',        // looks like the trip was split
+    '085300_6S',        // looks like the trip was split
 
     '065100_6..S02X001',  // looks like the trip was split
-    '065100_6..S',        // looks like the trip was split
+    '065100_6S',        // looks like the trip was split
 
-    '043400_6..S02R',     // huge delay at the start, then runs express
-    '058550_6..S07X001',  // normal, then runs express 
-    '084550_6..S03X001',  // skips a single stop?
+    '043400_6S',     // huge delay at the start, then runs express
+    '058550_6S',  // normal, then runs express 
+    '084550_6S',  // skips a single stop?
     
-    '015950_6',           // normal looking trip
+    '015950_6S',           // normal looking trip
   ]
 
   byTrainSel.append('path')
