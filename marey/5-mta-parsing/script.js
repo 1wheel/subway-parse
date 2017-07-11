@@ -187,7 +187,7 @@ function byTrainFilter(d){
   return d.length > 2 && d[0].station < d[2].station
 }
 
-d3.loadData('2017-06-05.tsv', function(err, res){
+d3.loadData('2017-06-05-full.tsv', function(err, res){
   data = res[0]
 
   data.forEach(function(d){
