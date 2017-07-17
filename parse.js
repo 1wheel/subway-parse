@@ -1,5 +1,6 @@
 var GtfsRealtimeBindings = require('gtfs-realtime-bindings')
 var { _, cheerio, d3, jp, fs, glob, io, queue, request } = require('scrape-stl')
+var argv = require('minimist')(process.argv.slice(2))
 
 glob.sync(__dirname + '/dl-all/raw-days/*').forEach(path => {
   parseDate(path, path.split('/').slice('-1')[0])
@@ -13,6 +14,7 @@ glob.sync(__dirname + '/../../old/raw-days/*').forEach(path => {
 // parseDate(__dirname + '/2017-06-05', '2017-06-05')
 
 function parseDate(path, date) {
+  if (argv.month && argv.month != date.split('-')[1]) return 
   console.log(date)
 
   var tripStop2time = {}

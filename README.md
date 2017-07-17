@@ -20,3 +20,16 @@ TypeError: Cannot read property 'substring' of undefined
     at Object.Module._extensions..js (module.js:580:10)
 ➜  subway git:(master) ✗
 ```
+
+node parse.js --month 01 &
+node parse.js --month 02 &
+node parse.js --month 03 &
+node parse.js --month 04 &
+node parse.js --month 05 &
+node parse.js --month 06 &
+node parse.js --month 07 &
+node parse.js --month 08 &
+node parse.js --month 09 &
+node parse.js --month 10 &
+node parse.js --month 11 &
+node parse.js --month 12
