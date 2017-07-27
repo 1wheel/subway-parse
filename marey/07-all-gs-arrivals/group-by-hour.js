@@ -1,6 +1,6 @@
 var { _, cheerio, d3, jp, fs, glob, io, queue, request } = require('scrape-stl')
 
-var stop = 631
+var stop = "july-631"
 
 
 var data = io.readDataSync(__dirname + '/' + stop + '.tsv')

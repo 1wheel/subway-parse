@@ -2,7 +2,7 @@ var { _, cheerio, d3, fs, glob, io, queue, request } = require('scrape-stl')
 
 var stop = '631'
 
-var days = glob.sync(__dirname + '/../../archive-data/*.tsv')
+var days = glob.sync(__dirname + '/../../archive-data/2017-07-*.tsv')
   .map(path => {
     var date = path.split('/').slice(-1)[0].replace('.tsv', '')
 
@@ -16,4 +16,4 @@ var days = glob.sync(__dirname + '/../../archive-data/*.tsv')
     return arrivals
 })
 
-io.writeDataSync(__dirname + '/631.tsv', _.flatten(days))
+io.writeDataSync(__dirname + '/july-631.tsv', _.flatten(days))

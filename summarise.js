@@ -73,7 +73,14 @@ function schedule() {
 	csv()
 		.fromFile("google_transit/stop_times.txt")
 		.on("json", (d) => {
-			if (d.trip_id.indexOf("WKD") > -1 && d.stop_id.indexOf("631") > -1) {
+			var route = d.trip_id.split("_")[2].split("\.")[0].trim();
+
+			var isWeekday = d.trip_id.indexOf("WKD") > -1 
+			var is631 = d.stop_id.indexOf("631") > -1
+			var is456 = route == "4" || route == "5" || route == "6"
+			if (isWeekday && is631) console.log(route, d.stop_id, isWeekday, is631, is456)
+			if (isWeekday&& is631 && is456) {
+				console.log(d.trip_id)
 				data.push(d);
 			}
 		})
