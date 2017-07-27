@@ -2,11 +2,15 @@ var GtfsRealtimeBindings = require('gtfs-realtime-bindings')
 var { _, cheerio, d3, jp, fs, glob, io, queue, request } = require('scrape-stl')
 var argv = require('minimist')(process.argv.slice(2))
 
-glob.sync(__dirname + '/dl-all/raw-days/*').forEach(path => {
-  parseDate(path, path.split('/').slice('-1')[0])
-})
+// glob.sync(__dirname + '/dl-all/raw-days/*').forEach(path => {
+//   parseDate(path, path.split('/').slice('-1')[0])
+// })
 
-glob.sync(__dirname + '/../../old/raw-days/*').forEach(path => {
+// glob.sync(__dirname + '/../../old/raw-days/*').forEach(path => {
+//   parseDate(path, path.split('/').slice('-1')[0])
+// })
+
+glob.sync(__dirname + '/../subway/2017-07-*').forEach(path => {
   parseDate(path, path.split('/').slice('-1')[0])
 })
 

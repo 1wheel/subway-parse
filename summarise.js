@@ -4,10 +4,10 @@ var glob = require("glob");
 var json2csv = require("json2csv");
 var csv = require("csvtojson");
 
-combine();
+// combine();
 // process();
 // out();
-// schedule();
+schedule();
 // schedule2();
 
 
