@@ -107,7 +107,13 @@ node parse.js --month 12
 2016-04-08
 ```
 
+https://github.com/ResidentMario/gtfs-tripify
 
+http://datamine.mta.info/sites/all/files/pdfs/GTFS-Realtime-NYC-Subway%20version%201%20dated%207%20Sep.pdf
+
+> The combination of Origin Time, Route ID and Direction can be used to identify a unique trip. The Path
+Identifier should be considered optional data that will only be provided when known. This could result
+with it being there at the start of a trip but not during portions of the trip.
 
 
 For most stops along the trip path, NYC subway schedules define a transit time. Departure times are
@@ -123,3 +129,12 @@ This includes all future Stop Times for the trip but StopTimes from the past
 are omitted. The first StopTime in the sequence is the stop the train is
 currently approaching, stopped at or about to leave. A stop is dropped from
 the sequence when the train departs the station.
+
+
+
+  // 
+  // Different actual and scheduled track is the result of manually rerouting a
+  // train off it scheduled path.  When this occurs, prediction data may become
+  // unreliable since the train is no longer operating in accordance to its
+  // schedule.  The rules engine for the 'countdown' clocks will remove this
+  // train from all schedule stations.
